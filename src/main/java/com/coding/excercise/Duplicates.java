@@ -3,10 +3,10 @@ package com.coding.excercise;
 import java.util.*; 
 class Duplicates { 
 
-	public static void countDuplicateCharacters(String str) 
+	public static void printDuplicateCharactersUsingCollection(String str) 
 	{ 
 		Map<Character, Integer> map = new HashMap<Character, Integer>(); 
-		char[] charArray = str.replaceAll(" ", "").toCharArray(); 
+		char[] charArray = str.toCharArray(); 
 		for (char c : charArray) { 
 
 			if (map.containsKey(c)) { 
@@ -35,6 +35,6 @@ class Duplicates {
 		String str = "My name is Emma"; 
 
 		// Function Call 
-		countDuplicateCharacters(str.toLowerCase()); 
+		printDuplicateCharactersUsingCollection(str.replaceAll(" ", "").toLowerCase()); 
 	} 
 } 
