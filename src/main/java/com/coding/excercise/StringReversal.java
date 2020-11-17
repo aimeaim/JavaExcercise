@@ -7,30 +7,33 @@ public class StringReversal {
         //original string
         String str = "Reverse String in Java";
         System.out.println("Original String: " + str);
+        
+        //reverse words
+        reverseWords(str);
+        
+        
+        //recursive method to reverse String in Java
+        String reverseStr = reverseRecursively(str);
+        System.out.println("Reverse String in Java using Recursion: " + reverseStr);
+
 
         //reversed string using Stringbuffer
-        String reverseStr = new StringBuffer(str).reverse().toString();
+        reverseStr = new StringBuffer(str).reverse().toString();
         System.out.println("Reverse String in Java using StringBuffer: " + reverseStr);
 
         //iterative method to reverse String in Java
         reverseStr = reverse(str);
         System.out.println("Reverse String in Java using Iteration: " + reverseStr);
 
-        //recursive method to reverse String in Java
-        reverseStr = reverseRecursively(str);
-        System.out.println("Reverse String in Java using Recursion: " + reverseStr);
-
+      
     }
 
-    public static String reverse(String str) {
-        StringBuilder strBuilder = new StringBuilder();
-        char[] strChars = str.toCharArray();
-
-        for (int i = strChars.length - 1; i >= 0; i--) {
-            strBuilder.append(strChars[i]);
-        }
-
-        return strBuilder.toString();
+    public static String reverse(String sampleString) {//reversal using Iteration
+    	String resultedString = "";
+    	for(int i=(sampleString.length()-1);i>=0;i--) {
+    		resultedString=resultedString+sampleString.charAt(i);
+    	}
+    	return resultedString;
     }
 
     public static String reverseRecursively(String str) {
@@ -42,6 +45,13 @@ public class StringReversal {
 
         return reverseRecursively(str.substring(1)) + str.charAt(0);
 
+    }
+    
+    private static void reverseWords(String sampleString) {
+    	String[] splittedArray = sampleString.split(" ");
+    	for(int i=(splittedArray.length-1);i>=0;i--) {
+    		System.out.println(splittedArray[i]);
+    	}
     }
 }
 
