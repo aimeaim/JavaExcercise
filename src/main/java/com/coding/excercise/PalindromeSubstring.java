@@ -2,7 +2,7 @@ package com.coding.excercise;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//For given string, count how many palindromic substrings are in the string.
 public class PalindromeSubstring { 
 //to find substrings by comparing 1 left and 1 right
 

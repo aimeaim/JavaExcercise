@@ -2,7 +2,7 @@ package com.coding.excercise;
 
 import java.util.*; 
 class Duplicates { 
-
+//	Print duplicate characters from string - Take sample string and print all duplicate characters.
 	public static void printDuplicateCharactersUsingCollection(String str) 
 	{ 
 		Map<Character, Integer> map = new HashMap<Character, Integer>(); 

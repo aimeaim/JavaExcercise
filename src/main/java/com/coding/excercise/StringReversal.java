@@ -1,7 +1,9 @@
 package com.coding.excercise;
 
 public class StringReversal {
-
+//Reverse words in a sentence - Take sample sentence and print reverse words of sentence.
+//	String Reversal using Iteration / Recursion - Take sample String and print reverse of String characters.
+	
     public static void main(String args[])  {
 
         //original string

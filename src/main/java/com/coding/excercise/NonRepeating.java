@@ -3,7 +3,7 @@ package com.coding.excercise;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-
+//Find first non repeated character of String - Take sample String and print first non-duplicate character.
 public class NonRepeating {
 	public static int getfirstNonRepeatCharUsingCollection(String input) {
 		char[] inputArray = input.toCharArray();

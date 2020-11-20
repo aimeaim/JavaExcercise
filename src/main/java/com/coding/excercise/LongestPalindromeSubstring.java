@@ -1,5 +1,6 @@
 package com.coding.excercise;
 
+//For given String consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
 public class LongestPalindromeSubstring { 
 
 	//to find substrings by comparing 1 left and 1 right
