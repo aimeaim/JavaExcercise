@@ -23,7 +23,7 @@ public class StringReversal {
         reverseStr = new StringBuffer(str).reverse().toString();
         System.out.println("Reverse String in Java using StringBuffer: " + reverseStr);
 
-        //iterative method to reverse String in Java
+        //iterative method to reverse String in Java with complexity o(n)
         reverseStr = reverse(str);
         System.out.println("Reverse String in Java using Iteration: " + reverseStr);
 
